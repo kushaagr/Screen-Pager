@@ -1,3 +1,8 @@
+Archive/
+Images/
+valid_ipv4_addresses.txt
+Screenshot.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
