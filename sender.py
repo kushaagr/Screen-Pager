@@ -30,10 +30,8 @@ debug("localhost is valid?", is_valid_ip("localhost"))
 #     host_address = input("Enter Host IPv4 address: ")
 #     have_ip = True
 
-while True:
-    if is_valid_ip(host_address):
-        break
-    elif have_ip:
+while not is_valid_ip(host_address):
+    if have_ip:
         print("Not a valid IPv4 address.")
         print()
     host_address = input("Enter receiver's IPv4 address: ")
@@ -63,6 +61,7 @@ def listen_for_messages(client: socket.socket) -> None:
 
 # ONE-TO-ONE CONNECTION
 try:
+    print("Connecting with receiver...")
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client.connect((host_address, PORT))
 except OSError as ose:
