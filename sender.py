@@ -14,7 +14,7 @@ valid_ip = re.compile(r'(?:\d{1,3}\.){3}\d{1,3}')
 is_valid_ip = lambda address : valid_ip.search(address) != None
 
 SS_NAME = "Screenshot.png"
-PORT = 8181
+PORT = 80
 host_address = ''
 have_ip = False
 
