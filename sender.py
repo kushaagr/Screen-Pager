@@ -8,13 +8,13 @@ import pyautogui as pgui
 import debug_utils
 from debug_utils import debug
 
-debug_utils.dev_mode = False
+# debug_utils.dev_mode = False
 
 valid_ip = re.compile(r'(?:\d{1,3}\.){3}\d{1,3}')
 is_valid_ip = lambda address : valid_ip.search(address) != None
 
 SS_NAME = "Screenshot.png"
-PORT = 80
+PORT = 8181
 host_address = ''
 have_ip = False
 
@@ -23,6 +23,7 @@ if len(sys.argv) > 1:
     have_ip = True
     debug(host_address)
 
+debug("dev_mode ON: DEBUG messages will be printed!")
 debug("0.0.0.0 is valid?", is_valid_ip("0.0.0.0"))
 debug("localhost is valid?", is_valid_ip("localhost"))
 
