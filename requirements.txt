@@ -1,3 +1,4 @@
 plyer
 pyautogui
 keyboard
+requests
