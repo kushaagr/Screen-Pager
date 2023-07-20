@@ -12,7 +12,7 @@ from debug_utils import debug
 
 HOSTNAME = socket.gethostname()
 HOST = socket.gethostbyname(HOSTNAME)
-PORT = 80
+PORT = 8181
 CONNECTIONS_LIMIT = 1 # ONE-TO-ONE CONNECTION
 
 
