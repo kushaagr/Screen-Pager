@@ -24,8 +24,8 @@ if len(sys.argv) > 1:
     debug(host_address)
 
 debug("dev_mode ON: DEBUG messages will be printed!")
-debug("0.0.0.0 is valid?", is_valid_ip("0.0.0.0"))
-debug("localhost is valid?", is_valid_ip("localhost"))
+debug("TEST: 0.0.0.0 is valid?", is_valid_ip("0.0.0.0"))
+debug("TEST: localhost is valid?", is_valid_ip("localhost"))
 
 # while not have_ip or not is_valid_ip(host_address):
 #     host_address = input("Enter Host IPv4 address: ")
