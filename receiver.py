@@ -77,7 +77,7 @@ print("Starting server...")
 debug("dev_mode ON: DEBUG messages will be printed!")
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind((HOSTNAME, PORT))
+server.bind((PUBLIC_HOST, PORT))
 server.listen(CONNECTIONS_LIMIT)
 print()
 debug(f"Your private ip is: {HOST}")
